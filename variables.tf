@@ -7,7 +7,7 @@ variable "nomad_addr" {
 variable "tetris_count" {
   description = "Number of instances to run"
   type        = number
-  default     = 6
+  default     = 5
 }
 
 variable "env_label" {
