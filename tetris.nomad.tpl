@@ -1,4 +1,4 @@
-job "tetris" {
+job "${job_id}" {
   datacenters = ["dc1"]
   type        = "service"
 
