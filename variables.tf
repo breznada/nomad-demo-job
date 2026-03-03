@@ -1,3 +1,9 @@
+variable "job_name" {
+  description = "The unique name for the Nomad job"
+  type        = string
+  default     = "tetris"
+}
+
 variable "nomad_addr" {
   description = "The HTTP address of the Nomad server"
   type        = string

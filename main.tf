@@ -14,6 +14,7 @@ provider "nomad" {
 resource "nomad_job" "tetris" {
   # Pass the variables from TF into the Nomad template
   jobspec = templatefile("${path.module}/tetris.nomad.tpl", {
+    job_id         = var.job_name
     instance_count = var.tetris_count
     environment    = var.env_label
     cpu_limit      = var.res_cpu
